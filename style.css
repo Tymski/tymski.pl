@@ -13,9 +13,11 @@ body {
 }
 
 .wrapper {
+    scroll-snap-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     width: 100%;
     height: 100%;
 }
@@ -42,9 +44,168 @@ body {
     box-shadow: 0.5vmax 0.5vmax 0.5vmax 0vmax #00000033;
 }
 
-#kropki{
+#kropki {
     display: inline-block;
     min-width: 10vmin;
     justify-content: left;
     text-align: left;
+}
+
+.something .wrapper2 {
+    background-color: #fff;
+    background: linear-gradient(#21A5F0 50%, #fff 50%);
+    border-color: rgb(0, 107, 168)
+}
+
+.something {
+    background-color: #222227;
+}
+
+.move-down {
+    min-width: fit-content;
+    max-width: 100%;
+    min-height: fit-content;
+    max-height: 100%;
+    margin-bottom: 5vmin;
+    border-radius: 10000px;
+    background-color: rgba(255, 255, 255, 0.212);
+    border: 0.2vmin solid rgba(255, 255, 255, 0.596);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 5vmin;
+    padding: auto;
+    box-shadow: 0.5vmax 0.5vmax 0.5vmax 0vmax #00000033;
+    opacity: 0.3;
+    transition: all 0.2s ease;
+}
+
+.move-down img {
+    width: 10vmin;
+    height: 10vmin;
+    transition: all 0.4s ease;
+}
+
+.move-up {
+    transform: rotate(180deg);
+    margin-bottom: 0vmin;
+    margin-top: 5vmin;
+}
+
+.move-down:hover {
+    opacity: 1.0;
+
+}
+
+.move-down:hover img {
+    transform: translate(0, 1.7vmin);
+}
+
+
+#Youtube {
+    background-color: #121212;
+}
+
+#Youtube .wrapper2 {
+    border-color: #FC0000;
+    background-color: #fff;
+}
+
+
+#Wordpress {
+    background-color: #01262F;
+}
+
+#Wordpress .wrapper2 {
+    border-color: #0A8ABD;
+    background-color: #D9E1E3;
+}
+
+#Facebook {
+    background-color: #D4D9E7;
+}
+
+#Facebook .wrapper2 {
+    border-color: #41629A;
+    background-color: #FFFFFF;
+}
+
+#Pixabay {
+    background-color: #2E120D;
+}
+
+#Pixabay .wrapper2 {
+    border-color: #40A15B;
+    background-color: #F7F8FA;
+}
+
+#Github {
+    background-color: #24292E;
+}
+
+#Github .wrapper2 {
+    border-color: #38B853;
+    background-color: #FFFFFF;
+}
+
+#Gitlab {
+    background-color: rgb(126, 50, 18);
+}
+
+#Gitlab .wrapper2 {
+    border-color: #6C50C8;
+    background-color: #FFFFFF;
+}
+
+#Twitch {
+    background-color: #1F1D26;
+}
+
+#Twitch .wrapper2 {
+    border-color: #4A397B;
+    background-color: #FFFFFF;
+}
+
+#Gravatar {
+    background-color: #222222;
+}
+
+#Gravatar .wrapper2 {
+    border-color: #228FBD;
+    background-color: #F5F5F5;
+}
+
+#Itch {
+    background-color: #495967;
+}
+
+#Itch .wrapper2 {
+    border-color: #F8555B;
+    background-color: #F5F5F5;
+}
+
+
+#Android {
+    background-color: #292929;
+}
+
+#Android .wrapper2 {
+    border-color: #428BF5;
+    background-color: #EEEEEE;
+}
+
+#Twitter {
+    background-color: rgb(0, 58, 97);
+}
+
+#Twitter .wrapper2 {
+    border-color: #21A5F0;
+    background-color: #FFFFFF;
+}
+
+body{
+    scroll-snap-type: y proximity;
 }
